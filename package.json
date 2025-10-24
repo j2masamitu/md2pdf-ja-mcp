@@ -1,6 +1,6 @@
 {
   "name": "@j2masamitu/md2pdf-ja-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for md2pdf-ja - Convert Japanese Markdown to PDF",
   "type": "module",
   "main": "dist/index.js",
