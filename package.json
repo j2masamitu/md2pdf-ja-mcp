@@ -1,0 +1,58 @@
+{
+  "name": "@j2masamitu/md2pdf-ja-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for md2pdf-ja - Convert Japanese Markdown to PDF",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "md2pdf-ja-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "claude_desktop_config.example.json"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "markdown",
+    "pdf",
+    "japanese",
+    "converter",
+    "claude",
+    "mcp-server"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "peerDependencies": {
+    "md2pdf-ja": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "md2pdf-ja": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/md2pdf-ja-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/md2pdf-ja-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/md2pdf-ja-mcp#readme"
+}
