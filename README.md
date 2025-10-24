@@ -41,37 +41,9 @@ npm link
 
 ### Claude Code の設定
 
-Claude Code の 設定
-
-プロジェクトでの設定はプロジェクトディレクトリの .mcp.json
-全体での設定は ~/.claude.json
-
-```json
-{
-  "mcpServers": {
-    "md2pdf-ja": {
-      "command": "md2pdf-ja-mcp"
-    }
-  }
-}
+```bash
+claude mcp add md2pdf-ja-mcp md2pdf-ja-mcp --scope user
 ```
-
-npm link を使用してソースからインストールした場合は、以下を使用してください：
-
-```json
-{
-  "mcpServers": {
-    "md2pdf-ja": {
-      "command": "node",
-      "args": ["/path/to/md2pdf-ja-mcp/dist/index.js"]
-    }
-  }
-}
-```
-
-設定を更新した後、Claude Code を再起動してください。
-
-詳細は[mcp ドキュメント](https://docs.claude.com/en/docs/claude-code/mcp)
 
 ## 利用可能なツール
 
